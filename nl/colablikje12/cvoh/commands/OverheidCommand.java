@@ -58,29 +58,28 @@ public class OverheidCommand extends PlayerCommand{
 				CVOverheid.inkoop.add(p.getName());
 			}
 
-			if (CVOverheid.inkoop.size() == 0)
-				CVOverheid.inkoop.add("<geen>");
-
-			if (CVOverheid.gemeente.size() == 0)
-				CVOverheid.gemeente.add("<geen>");
-
-			if (CVOverheid.tech.size() == 0)
-				CVOverheid.tech.add("<geen>");
-
-			if (CVOverheid.secret.size() == 0)
-				CVOverheid.secret.add("<geen>");
-
-			if (CVOverheid.politie.size() == 0)
-				CVOverheid.politie.add("<geen>");
-
-			if (CVOverheid.belastingdienst.size() == 0)
-				CVOverheid.belastingdienst.add("<geen>");
-
-			if (CVOverheid.bouwbedrijf.size() == 0)
-				CVOverheid.bouwbedrijf.add("<geen>");
-
-
 		}
+
+		if (CVOverheid.inkoop.size() == 0)
+			CVOverheid.inkoop.add("<geen>");
+
+		if (CVOverheid.gemeente.size() == 0)
+			CVOverheid.gemeente.add("<geen>");
+
+		if (CVOverheid.tech.size() == 0)
+			CVOverheid.tech.add("<geen>");
+
+		if (CVOverheid.secret.size() == 0)
+			CVOverheid.secret.add("<geen>");
+
+		if (CVOverheid.politie.size() == 0)
+			CVOverheid.politie.add("<geen>");
+
+		if (CVOverheid.belastingdienst.size() == 0)
+			CVOverheid.belastingdienst.add("<geen>");
+
+		if (CVOverheid.bouwbedrijf.size() == 0)
+			CVOverheid.bouwbedrijf.add("<geen>");
 		player.sendMessage(Common.colorize("&6&m---------------------------------------"));
 		player.sendMessage(Common.colorize("&f&lOverheid lijst"));
 		player.sendMessage(Common.colorize("&6Gemeente: &f" + CVOverheid.gemeente.toString().replaceAll("\\[", "").replaceAll("\\]", "")));
